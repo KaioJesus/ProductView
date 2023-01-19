@@ -15,11 +15,23 @@ main {
     height: fit-content;
     width: 90%;
     border-radius: 15px;
-    margin: 0 15px 55px;
+    padding-bottom: 8px;
+}
+
+.product__section header p, h1{
+    margin: 18px 20px 15px
+
+}
+
+.product__section header h1 {
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .product__section p {
     font-size: 14px;
+    margin: 0 15px;
+    color: hsl(228, 12%, 48%);
 } 
 
 .img__header{
