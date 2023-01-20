@@ -58,10 +58,16 @@ main {
     text-decoration: line-through;
     font-family: 'Montserrat';
     color: hsl(228, 12%, 48%);
+    font-size: 14px;
 }
 
-.button::before{
-    
+button{
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    width: 90%;
+    margin: 0px 18px;
+    border-radius: 5px;
+    height: 41px
 }
 .attribution {
     display: none;
