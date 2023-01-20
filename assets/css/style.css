@@ -1,6 +1,6 @@
 body {
     background-color: hsl(30, 38%, 92%);
-    font-family: 'Montserrat', 'Fraunces';
+    font-family:'Fraunces', sans-serif;
 }
 
 main {
@@ -28,15 +28,40 @@ main {
     font-weight: 700;
 }
 
-.product__section p {
+#product__section__p {
     font-size: 14px;
-    margin: 0 15px;
+    margin: 0 16px;
     color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
 } 
 
 .img__header{
     width: 100%;
     border-radius: 15px 15px 0 0;
+}
+
+.product__section__div{
+    display: flex;
+    margin: 32px 16px 10px;
+}
+
+
+#product__value__discount{
+    font-size: 28px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+#product__value__original{
+    justify-self: center;
+    align-self: flex-start;
+    text-decoration: line-through;
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+
+.button::before{
+    
 }
 .attribution {
     display: none;
