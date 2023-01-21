@@ -35,9 +35,19 @@ main {
     font-family: 'Montserrat';
 } 
 
+section header p {
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
 .img__header{
     width: 100%;
     border-radius: 15px 15px 0 0;
+}
+
+.img__header_desktop{
+    display: none;
 }
 
 .product__section__div{
@@ -53,22 +63,53 @@ main {
 }
 
 #product__value__original{
-    justify-self: center;
-    align-self: flex-start;
+    align-self: center;
     text-decoration: line-through;
     font-family: 'Montserrat';
     color: hsl(228, 12%, 48%);
     font-size: 14px;
+    margin: 0 16px;
 }
 
 button{
     background-color:hsl(158, 36%, 37%);
     color: white;
     width: 90%;
-    margin: 0px 18px;
+    margin: 0px 18px 16px;
     border-radius: 5px;
     height: 41px
 }
+
+button::before{
+    src: url(../images/icon-cart.svg);
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+@media(min-width: 834px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .product__section header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img__header{
+        display: none;
+    }
+
+    .img__header_desktop{
+        display: block;
+    }
+
+
+}
+
 .attribution {
     display: none;
 }
